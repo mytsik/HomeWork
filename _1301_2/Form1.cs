@@ -14,7 +14,6 @@ using Microsoft.VisualBasic.ApplicationServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Word = Microsoft.Office.Interop.Word;
 
-
 namespace _1301_2
 {
     public partial class Form1 : Form
@@ -24,10 +23,8 @@ namespace _1301_2
             InitializeComponent();
         }
 
-
         BindingList<_1301_2.Task> data1 = new BindingList<_1301_2.Task>();
         string conn = "Server=localhost;Port=5432;Database=HomeWork;User Id=postgres;Password=24601;";
-
 
         public void DGRefresh1()
         {
@@ -42,7 +39,6 @@ namespace _1301_2
                     dataGridView1.DataSource = data1;
                 }
             }
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -51,9 +47,7 @@ namespace _1301_2
             DGRefresh1();
             this.dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            //this.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            //dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
+            this.dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,10 +62,8 @@ namespace _1301_2
                     textBox1.Text = "";
                     textBox2.Text = "";
                     textBox3.Text = "";
-
                     DGRefresh1();
                 }
-
             }
             catch (Exception ex)
             {
@@ -118,7 +110,6 @@ namespace _1301_2
                         DGRefresh1();
                     }
                 }
-
             }
             catch (Exception ex)
             {

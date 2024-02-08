@@ -13,8 +13,6 @@ using Microsoft.Office.Interop.Word;
 using Microsoft.VisualBasic.ApplicationServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Word=Microsoft.Office.Interop.Word;
-//using SautinSoft.Document;
-//using Microsoft.Office.Tools.Word;
 
 namespace _1301_1
 {
@@ -62,8 +60,7 @@ namespace _1301_1
             Wordapp.WindowState = Word.WdWindowState.wdWindowStateNormal;
             Word.Document doc = Wordapp.Documents.Add(Visible: true);
 
-            Word.Paragraph par1 = doc.Paragraphs.Add();
-            //par1.Range.Text = "Компания ООО";
+            Word.Paragraph par1 = doc.Paragraphs.Add();            
             par1.Range.Text = "Компания ООО\r\n\"СтройМодерн\"\r\n\r\n\r\n\r\n";
             par1.Alignment = Word.WdParagraphAlignment.wdAlignParagraphRight;
 
