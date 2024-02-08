@@ -84,7 +84,6 @@ namespace _1301_2
                         DGRefresh1();
                     }
                 }
-
             }
             catch (Exception ex)
             {
