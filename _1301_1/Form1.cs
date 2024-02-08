@@ -22,7 +22,6 @@ namespace _1301_1
         public Form1()
         {
             InitializeComponent();
-
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
