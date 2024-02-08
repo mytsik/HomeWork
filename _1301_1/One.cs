@@ -8,7 +8,7 @@ using NpgsqlTypes;
 using Npgsql;
 using System.ComponentModel.DataAnnotations;
 
-namespace First
+namespace _1301_1
 {
     [Table("one")]
     public class One

@@ -1,4 +1,4 @@
-namespace HW
+namespace _1301_2
 {
     internal static class Program
     {
