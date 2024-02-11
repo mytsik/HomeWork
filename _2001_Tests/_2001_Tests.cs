@@ -57,6 +57,5 @@ namespace _2001_Tests
 
             Assert.AreEqual(expected, actual);
         }
-
     }
 }
