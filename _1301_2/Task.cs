@@ -14,7 +14,6 @@ namespace _1301_2
     [Table("task")]
     public class Task
     {
-        //private string TaskNameValue = "Название задачи";
 
         [Key]
         [Column("task_name")]
