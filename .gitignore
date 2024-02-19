@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/_0102_1_ICSharpCode.TextEditor/Project/_0102_1_ICSharpCode.TextEditor.csproj
+/_0102_1_ICSharpCode.TextEditor
+/.gitignore
+/.gitignore
