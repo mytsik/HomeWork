@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using _1301_1;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Office.Interop.Word;
 using Microsoft.VisualBasic.ApplicationServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Word=Microsoft.Office.Interop.Word;
+
 
 namespace _1301_1
 {
@@ -31,6 +31,7 @@ namespace _1301_1
 
         BindingList<_1301_1.One> data1 = new BindingList<_1301_1.One>();
         string conn = "Server=localhost;Port=5432;Database=HomeWork;User Id=postgres;Password=24601;";
+        
         string path = "C:\\Users\\Yanina\\OneDrive\\Рабочий стол\\HomeWork13011.doc";
 
         public void DGRefresh1()
@@ -51,8 +52,9 @@ namespace _1301_1
         {
             dataGridView1.DataSource = data1;
             DGRefresh1();
+            
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {            
             var Wordapp = new Word.Application();

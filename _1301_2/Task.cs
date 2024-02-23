@@ -11,7 +11,7 @@ using System.ComponentModel.DataAnnotations;
 namespace _1301_2
 {
     
-    [Table("task")]
+    [Table("task2")]
     public class Task
     {
 
@@ -20,7 +20,7 @@ namespace _1301_2
         public string TaskName { get; set; }
 
         [Column("deadline")]
-        public string Deadline { get; set; }
+        public DateTime Deadline { get; set; }
 
         [Column("status")]
         public string Status { get; set; }
