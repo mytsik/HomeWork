@@ -50,10 +50,8 @@ namespace _0102_2
                     foreach (DataGridViewColumn col in dataGridView1.Columns)
                         if (col.Visible)
                         {
-                            //sw.Write(col.HeaderText + "\t");
                             col_n.Add(col.Index);
                         }
-                    //sw.WriteLine();
                     int x = dataGridView1.RowCount;
                     if (dataGridView1.AllowUserToAddRows) x--;
 
@@ -80,23 +78,10 @@ namespace _0102_2
             {
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "CSV (*.csv)|*.csv";
-                //sfd.FileName = "Output.csv";
                 bool fileError = false;
 
                 if (sfd.ShowDialog() == DialogResult.OK)
-                {
-                    /*if (File.Exists(sfd.FileName))
-                    {
-                        try
-                        {
-                            File.Delete(sfd.FileName);
-                        }
-                        catch (IOException ex)
-                        {
-                            fileError = true;
-                            MessageBox.Show("It wasn't possible to write the data to the disk." + ex.Message);
-                        }
-                    }*/
+                {                    
                     if (!fileError)
                     {
                         try
@@ -127,11 +112,7 @@ namespace _0102_2
                         }
                     }
                 }
-            }
-            /*else
-            {
-                MessageBox.Show("No Record To Export !!!", "Info");
-            }*/
+            }            
         }
     }
 }
