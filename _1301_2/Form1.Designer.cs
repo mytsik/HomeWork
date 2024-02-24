@@ -166,7 +166,7 @@ namespace _1301_2
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(289, 18);
+            label5.Location = new Point(245, 18);
             label5.Name = "label5";
             label5.Size = new Size(114, 15);
             label5.TabIndex = 11;

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_0102_1_ICSharpCode.TextEdi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_0102_1", "_0102_1_TextEditor\_0102_1.csproj", "{9DAE91C2-4EB1-4E50-89DA-DDD0537D8F97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_0102_2", "_0102_2\_0102_2.csproj", "{C21D953D-3555-4C9D-91ED-C62BF2296774}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{9DAE91C2-4EB1-4E50-89DA-DDD0537D8F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DAE91C2-4EB1-4E50-89DA-DDD0537D8F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DAE91C2-4EB1-4E50-89DA-DDD0537D8F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C21D953D-3555-4C9D-91ED-C62BF2296774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C21D953D-3555-4C9D-91ED-C62BF2296774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C21D953D-3555-4C9D-91ED-C62BF2296774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C21D953D-3555-4C9D-91ED-C62BF2296774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
