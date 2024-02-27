@@ -51,7 +51,6 @@ namespace _0802_2
                 MessageBox.Show(ex.ToString());
             }
 
-
             if (userList.Count != 0)
             {
                 Hide();
