@@ -1,4 +1,4 @@
-﻿namespace _0302
+﻿namespace _0802_1
 {
     partial class MainForm
     {

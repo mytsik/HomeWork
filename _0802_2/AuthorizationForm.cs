@@ -13,7 +13,7 @@ using Npgsql;
 using System.Drawing.Text;
 using System.Collections;
 
-namespace _0802_1
+namespace _0802_2
 {
     public partial class AuthorizationForm : Form
     {
@@ -22,8 +22,7 @@ namespace _0802_1
             InitializeComponent();
         }
 
-        string connStr = "Server=localhost;Port=5432;Database=Practice;User Id=postgres;Password=24601;";
-        int attempts = 3;
+        string connStr = "Server=localhost;Port=5432;Database=Practice;User Id=postgres;Password=24601;";        
 
         private void buttonEntry_Click(object sender, EventArgs e)
         {           
@@ -56,39 +55,16 @@ namespace _0802_1
             if (userList.Count != 0)
             {
                 Hide();
-                MainForm fmMain = new MainForm();
+                MainForm fmMain = new MainForm(textBoxLogin.Text);
                 fmMain.ShowDialog();
             }
             else
-            {
-                attempts -= 1;
-                MessageBox.Show($"Логин и/или пароль введены не верно! Осталось попыток: {attempts}");
-
-                if (attempts == 0)
-                {
-                    System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-                    timer.Interval = 20000;
-                    timer.Tick += timer_Tick;
-                    timer.Start();
-
-                    textBoxLogin.Enabled = false;
-                    textBoxPassword.Enabled = false;
-                    buttonEntry.Enabled = false;
-
-                    attempts = 3;
-                }
+            {                
+                MessageBox.Show("Логин и/или пароль введены не верно!");
             }
 
             textBoxLogin.Text = "";
             textBoxPassword.Text = "";
-
-        }
-        
-        private async void timer_Tick(object sender, EventArgs e)
-        {
-            textBoxLogin.Enabled = true;
-            textBoxPassword.Enabled = true;
-            buttonEntry.Enabled = true;
-        }
+        }                
     }
 }

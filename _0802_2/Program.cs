@@ -1,4 +1,4 @@
-namespace _0802_1
+namespace _0802_2
 {
     internal static class Program
     {

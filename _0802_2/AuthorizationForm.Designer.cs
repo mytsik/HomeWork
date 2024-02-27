@@ -1,4 +1,4 @@
-﻿namespace _0802_1
+﻿namespace _0802_2
 {
     partial class AuthorizationForm
     {
@@ -89,6 +89,7 @@
             Controls.Add(textBoxPassword);
             Controls.Add(textBoxLogin);
             Name = "AuthorizationForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
